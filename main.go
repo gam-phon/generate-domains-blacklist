@@ -237,20 +237,6 @@ func main() {
 			whitelistsSet[url] = struct{}{}
 		}
 	}
-	/*
-		if time_restricted_url:
-		time_restricted_content, _trusted = load_from_url(time_restricted_url)
-		time_restricted_names, time_restrictions = parse_time_restricted_list(
-			time_restricted_content)
-
-		if time_restricted_names:
-			print("########## Time-based blacklist ##########\n")
-			for name in time_restricted_names:
-				print_restricted_name(name, time_restrictions)
-
-		# Time restricted names should be whitelisted, or they could be always blocked
-		whitelisted_names |= time_restricted_names
-	*/
 
 	sources := make(source)
 	tmpSources := make(source)
